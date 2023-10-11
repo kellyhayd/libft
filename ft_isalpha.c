@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 17:40:42 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/06 14:32:17 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:11:37 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_isalpha(int c)
 {
-		if ((c >= 'A' && c <= 'Z')
-			|| (c >= 'a' && c <= 'z'))
-			return (1);
-		else
-			return (0);
+	if ((c >= 'A' && c <= 'Z')
+		|| (c >= 'a' && c <= 'z'))
+		return (1);
+	else
+		return (0);
 }
