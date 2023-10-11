@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/10 10:10:21 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 15:08:25 by krocha-h         ###   ########.fr       */
+/*   Created: 2023/10/11 12:58:40 by krocha-h          #+#    #+#             */
+/*   Updated: 2023/10/11 15:04:24 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	char	*new;
-	size_t	i;
-	size_t	s_len;
+	unsigned int	i;
 
-	s_len = ft_strlen(s);
-	if (s_len < start)
-		len = 0;
-	if ((s_len - start) < len)
-		len = s_len - start;
-	new = malloc (len * sizeof(char));
-	if (!new)
-		return (NULL);
 	i = 0;
-	while (i < len - 1)
+	if (*s && *f)
 	{
-		new[i] = s[start + i];
-		i++;
+		while (*s)
+			f(i++, s++);
 	}
-	new[i] = '\0';
-	return (new);
 }
+
+// #include <ctype.h>
+// #include <stdio.h>
+
+// void uppercase(unsigned int index, char *ch)
+// {
+//     *ch = toupper(*ch);
+// }
+
+//  int main () {
+// 	char str[] = "hello";
+// 	ft_striteri(str, uppercase);
+// 	printf("%s\n", str);
+// 	return 0;
+// }

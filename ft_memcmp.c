@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 09:40:17 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/10 09:48:27 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:03:51 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*tmp1;
 	unsigned char	*tmp2;
-	size_t		i;
+	size_t			i;
 
 	i = 0;
 	tmp1 = (unsigned char *)s1;

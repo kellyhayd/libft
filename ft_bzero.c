@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 18:13:32 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/10 09:37:16 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:08:03 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*cast;
 
-	cast = (char *)s;
+	cast = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{

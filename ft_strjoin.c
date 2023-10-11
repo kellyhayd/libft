@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 18:26:33 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/06 16:17:39 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/11 13:59:54 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,15 +41,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (dest);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-    char	*s1 = "kelly ";
-	char	*s2 = "hayd";
-    char *result = ft_strjoin(s1, s2);
+// int main()
+// {
+//     char	*s1 = "kelly ";
+// 	char	*s2 = "hayd";
+//     char *result = ft_strjoin(s1, s2);
 
-    printf("%s\n", result);
-    free(result);
-    return 0;
-}
+//     printf("%s\n", result);
+//     free(result);
+//     return 0;
+// }
