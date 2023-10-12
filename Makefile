@@ -60,7 +60,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 
 %.o: %.c $(HEADER)
-	$(CC) $(FLAGS) -c $< -I $(HEADER) -o $@
+	$(CC) $(FLAGS) -c $< -o $@
 	ar -rcs $(NAME) $@
 
 bonus: $(OBJ_BONUS)
