@@ -6,11 +6,14 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:22:34 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/10 13:59:14 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:59:58 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Allocates and returns a copy of ’s1’ with the characters specified in ’set’
+removed from the beginning and the end of the string */
 
 static int	run_set(const char *set_search, const char src)
 {

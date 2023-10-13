@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 09:40:17 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 15:03:51 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:38:37 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Compares up to n bytes of s1 and s2 */
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

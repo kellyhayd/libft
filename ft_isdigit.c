@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/23 12:33:14 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 13:59:20 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:38:53 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Tests if c is a decimal digit */
 
 int	ft_isdigit(int c)
 {

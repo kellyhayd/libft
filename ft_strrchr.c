@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 09:25:34 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/10 09:29:36 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:59:22 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Locates the last occurrence of c in string s */
 
 char	*ft_strrchr(const char *s, int c)
 {

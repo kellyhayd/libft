@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 09:15:41 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 13:59:35 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:38:28 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Sets n bytes of dest to a value c */
 
 void	*ft_memset(void *s, int c, size_t n)
 {

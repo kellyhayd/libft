@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 17:40:42 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 15:11:37 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:38:59 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Tests if c is alphabetic */
 
 int	ft_isalpha(int c)
 {

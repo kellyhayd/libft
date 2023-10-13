@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 12:37:56 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/06 14:32:02 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:38:18 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Outputs the integer ’n’ to the given file descriptor */
 
 void	ft_putnbr_fd(int n, int fd)
 {

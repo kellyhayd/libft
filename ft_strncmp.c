@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 17:48:23 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/06 17:43:07 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:56:47 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Compares up to n characters of s1 and s2 */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

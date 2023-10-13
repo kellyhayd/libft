@@ -6,11 +6,14 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 18:29:05 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 15:06:40 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:42:30 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Allocate and returns a pointer to a null-terminated byte string,
+which is a duplicate of the string pointed to by s.*/
 
 char	*ft_strdup(const char *s)
 {

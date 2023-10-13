@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 17:31:18 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 13:59:08 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:39:08 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Converts string to an integer */
 
 int	ft_atoi(const char *str)
 {

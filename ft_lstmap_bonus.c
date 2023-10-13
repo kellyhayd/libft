@@ -1,6 +1,20 @@
-42 HEADER
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/13 12:29:56 by krocha-h          #+#    #+#             */
+/*   Updated: 2023/10/13 13:04:49 by krocha-h         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
+
+/* Iterates the list ’lst’ and applies the function ’f’ on the content of each node.
+Creates a new list resulting of the successive applications of the function ’f’.
+The ’del’ function is used to delete the content of a node if needed */
 
 t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

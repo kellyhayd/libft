@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:25:36 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 15:10:14 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:38:32 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Copies n bytes of src to dest. Allows copying between objects that overlap */
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

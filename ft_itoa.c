@@ -6,11 +6,13 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 14:22:23 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/11 15:11:03 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:38:47 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* The itoa() function coverts the integer n into a character string */
 
 void	ft_bzero(void *s, size_t n)
 {

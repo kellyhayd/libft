@@ -6,12 +6,15 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 13:58:11 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/10 13:58:43 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:40:25 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+
+/* Allocates and returns an array of strings obtained by splitting ’s’ using
+the character ’c’ as a delimiter. The array must end with a NULL pointer */
 
 static int	ft_strcount(const char *s, char c)
 {
@@ -33,7 +36,7 @@ static int	ft_strcount(const char *s, char c)
 // 	char **result;
 // 	int		count;
 // 	int		j;
-	
+
 // 	// if (s == 0 || s[0] == 0)
 // 	// 	return (NULL);
 // 	buffer = ft_strdup(s);
@@ -64,7 +67,7 @@ char	**ft_split(const char *s, char c)
 	char	*cast;
 	int		count;
 	int		j;
-	
+
 	// if (s == 0 || s[0] == 0)
 	// 	return (NULL);
 	cast = (char *)s;

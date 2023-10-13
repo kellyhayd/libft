@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/06 17:54:48 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/13 12:39:01 by krocha-h         ###   ########.fr       */
+/*   Created: 2023/10/13 12:29:43 by krocha-h          #+#    #+#             */
+/*   Updated: 2023/10/13 13:04:19 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Tests if c is alphanumeric */
+/* Iterates the list ’lst’ and applies the function ’f’ on the content of each node */
 
-int	ft_isalnum(int c)
+void    ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (ft_isalpha(c) || ft_isdigit(c))
-		return (1);
-	else
-		return (0);
+    while (lst)
+    {
+        f(lst->content);
+        lst = lst->next;
+    }
 }
