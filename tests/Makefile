@@ -8,15 +8,16 @@ SRC = test_split.c ../*.c
 
 OBJ = $(SRC:%.c=%.o)
 
-HEADER = ../libft.h
-
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(FLAGS) $(OBJ) I-$(HEADER) -o $@
-	$@
+$(NAME): $(OBJ) libft.a
+	$(CC) $(FLAGS) test_split.c -I../ -L../ -lft -o $@
 
 %.o: %.c 
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(FLAGS) -I../ -c $< -o $@
 	
+libft.a: 
+	cd .. && $(MAKE) all
 
+clean:
+	rm -f *.o

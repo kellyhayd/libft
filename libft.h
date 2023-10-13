@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <stddef.h>
 
 typedef struct s_list
 {
@@ -39,6 +40,7 @@ void	ft_bzero(void *s, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_strchr(const char *s, int c);
+char	**ft_split(const char *s, char c);
 char	*ft_strrchr(const char *s, int c);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
