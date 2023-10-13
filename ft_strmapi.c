@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 12:44:23 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/13 12:56:19 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 14:44:38 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!str)
 		return (NULL);
 	i = 0;
+	idx = 0;
 	while (*s)
 	{
 		*(str + i) = f(idx++, *s++);

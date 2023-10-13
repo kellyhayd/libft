@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 13:58:11 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/13 12:40:25 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/10/13 14:43:47 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,62 +30,32 @@ static int	ft_strcount(const char *s, char c)
 	return (count);
 }
 
-// char	**ft_split(const char *s, char c)
-// {
-// 	char *buffer;
-// 	char **result;
-// 	int		count;
-// 	int		j;
-
-// 	// if (s == 0 || s[0] == 0)
-// 	// 	return (NULL);
-// 	buffer = ft_strdup(s);
-// 	if (!buffer)
-// 		return (NULL);
-// 	count = ft_strcount(s, c);
-// 	result = malloc(( count + 1) * sizeof(char *));
-// 	if (!result)
-// 		return (NULL);
-// 	j = 1;
-// 	result[0] = &buffer[0];
-// 	while (*buffer)
-// 	{
-// 		if (*buffer == c)
-// 		{
-// 			*buffer = '\0';
-// 			result[j++] = (buffer + 1);
-// 		}
-// 		buffer++;
-// 	}
-// 	result[j] = NULL;
-// 	return (result);
-// }
-
 char	**ft_split(const char *s, char c)
 {
+	char *buffer;
 	char **result;
-	char	*cast;
 	int		count;
 	int		j;
 
-	// if (s == 0 || s[0] == 0)
-	// 	return (NULL);
-	cast = (char *)s;
-	result = ft_strdup(s);
+	if (s == 0 || s[0] == 0)
+		return (NULL);
+	buffer = ft_strdup(s);
+	if (!buffer)
+		return (NULL);
 	count = ft_strcount(s, c);
 	result = malloc(( count + 1) * sizeof(char *));
-	if (!s || !result)
+	if (!result)
 		return (NULL);
 	j = 1;
-	result[0] = &cast[0];
-	while (*cast)
+	result[0] = &buffer[0];
+	while (*buffer)
 	{
-		if (*cast == c)
+		if (*buffer == c)
 		{
-			*cast = '\0';
-			result[j++] = (cast + 1);
+			*buffer = '\0';
+			result[j++] = (buffer + 1);
 		}
-		cast++;
+		buffer++;
 	}
 	result[j] = NULL;
 	return (result);
@@ -121,17 +91,17 @@ size_t	ft_strlen(const char *s)
 	return (size);
 }
 
-int main(){
-	const char *str1 = "Hello,World,Split,Me";
-	char **split_array1 = ft_split(str1, ',');
-	printf("%s\n", &split_array1);
+// int main(){
+// 	const char *str1 = "Hello,World,Split,Me";
+// 	char **split_array1 = ft_split(str1, ',');
+// 	printf("%s\n", &split_array1);
 
-	const char *str2 = "Lorem ipsum dolor sit amet";
-	char **split_array2 = ft_split(str2, ' ');
+// 	const char *str2 = "Lorem ipsum dolor sit amet";
+// 	char **split_array2 = ft_split(str2, ' ');
 
-	const char *str3 = "apple,banana,cherry,orange";
-	char **split_array3 = ft_split(str3, ',');
+// 	const char *str3 = "apple,banana,cherry,orange";
+// 	char **split_array3 = ft_split(str3, ',');
 
-	const char *str4 = "123-456-789-0";
-	char **split_array4 = ft_split(str4, '-');
-}
+// 	const char *str4 = "123-456-789-0";
+// 	char **split_array4 = ft_split(str4, '-');
+// }
