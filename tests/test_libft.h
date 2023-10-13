@@ -5,6 +5,7 @@
 
 #include "../libft.h"
 
-int	test_ft_strlen(void);
+void	test_strlen(void);
+
 
 #endif

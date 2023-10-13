@@ -4,6 +4,7 @@
 #define TUR "\x1b[38;5;30m" 		// Turquesa
 #define TURNEG "\x1b[1;38;5;30m"	// Turquesa negrito
 #define RED "\x1b[31m"				// Vermelho
+#define GREEN "\x1b[32m"			// Verde
 #define PUR "\x1b[38;5;56m" 		// Roxo
 #define RES "\x1B[0m"				// Reset
 
