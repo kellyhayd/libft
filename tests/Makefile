@@ -4,7 +4,9 @@ CC = cc
 
 FLAGS = -Wall -Wextra -Werror
 
-SRC = test_split.c ../*.c 
+FT_SRC = ../*.c
+
+TESTS_SRC = *.c
 
 OBJ = $(SRC:%.c=%.o)
 
@@ -13,10 +15,10 @@ all: $(NAME)
 $(NAME): $(OBJ) libft.a
 	$(CC) $(FLAGS) test_split.c -I../ -L../ -lft -o $@
 
-%.o: %.c 
+%.o: %.c
 	$(CC) $(FLAGS) -I../ -c $< -o $@
-	
-libft.a: 
+
+libft.a:
 	cd .. && $(MAKE) all
 
 clean:
