@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 14:22:23 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/13 12:38:47 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/11/08 20:22:55 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,70 +14,46 @@
 
 /* The itoa() function coverts the integer n into a character string */
 
-void	ft_bzero(void *s, size_t n)
+static size_t	ft_len(int n)
 {
-	size_t			i;
-	unsigned char	*cast;
+	size_t	count;
 
-	cast = (unsigned char *)s;
-	i = 0;
-	while (i < n)
+	count = 0;
+	if (n <= 0)
 	{
-		cast[i] = 0;
-		i++;
-	}
-	s = (void *)cast;
-}
-
-int	ft_len(int n)
-{
-	int	i;
-
-	i = 0;
-	if (n < 0)
-	{
+		count = 1;
 		n = -n;
-		i++;
 	}
 	while (n > 0)
 	{
+		count++;
 		n = n / 10;
-		i++;
 	}
-	return (i);
+	return (count);
 }
 
 char	*ft_itoa(int n)
 {
-	int		size;
+	size_t	size;
 	char	*nbr;
-	int		i;
+	long int	num;
 
-	i = n;
+	num = n;
 	size = ft_len(n);
-	nbr = malloc(size * sizeof(char));
+	nbr = malloc((size + 1) * sizeof(char));
+	ft_bzero(nbr, (size * sizeof(char)));
 	if (!nbr)
 		return (0);
-	ft_bzero(nbr, (ft_len(n) * sizeof(char)));
 	nbr[size] = '\0';
-	while (size-- > 0)
+	if (num < 0)
 	{
-		if (n < 0)
-			n = -n;
-		nbr[size] = (n % 10) + '0';
-		n = n / 10;
-	}
-	if (i < 0)
-	{
+		num = -num;
 		nbr[0] = '-';
+	}
+	while (size--)
+	{
+		nbr[size] = (num % 10) + '0';
+		num = num / 10;
 	}
 	return (nbr);
 }
-
-// #include <stdio.h>
-
-// int main() {
-// 	printf("%s\n", ft_itoa(-42));
-// 	printf("%s\n", ft_itoa(2568));
-// 	return (0);
-// }
