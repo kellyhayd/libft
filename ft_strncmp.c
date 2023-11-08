@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 17:48:23 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/13 12:56:47 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/11/08 14:03:25 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		i++;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	return (s1[i] - s2[i]);
 }

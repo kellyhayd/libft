@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:22:34 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/13 12:59:58 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:01:09 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ char	*ft_strtrim(const char *s1, const char *set)
 
 	start = 0;
 	end = ft_strlen(s1);
-	while (!run_set(set, s1[start]))
+	while (run_set(set, s1[start]) && s1[start])
 		start++;
-	while (!run_set(set, s1[end]))
+	while (run_set(set, s1[end - 1]) && end > start)
 		end--;
 	new = malloc ((end - start + 1) * sizeof(char));
 	if (!new)
