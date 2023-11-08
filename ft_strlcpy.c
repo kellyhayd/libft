@@ -18,16 +18,18 @@ NUL-terminating the result. Return the total length of the string it tried to cr
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
+	size_t	len_src;
 
+	len_src = ft_strlen(src);
+	if (size == 0)
+	{
+		dst[0] = '\0';
+		return (len_src);
+	}
 	if (src == NULL)
 		return (0);
 	i = 0;
-	while (src[i])
-		i++;
-	if (size == 0)
-		return (i);
-	i = 0;
-	while (src[i] && i < size)
+	while (src[i] != '\0' && i < size - 1)
 	{
 		dst[i] = src[i];
 		i++;
