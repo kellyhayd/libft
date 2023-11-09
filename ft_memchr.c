@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 09:30:09 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/13 12:38:39 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/11/09 14:14:12 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		tmp++;
 		n--;
 	}
-	// if (c == 0)
-	// 	return (NULL);
 	return (NULL);
 }

@@ -6,15 +6,11 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 13:58:11 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/11/08 19:13:31 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:24:24 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strdup(const char *s);
-size_t	ft_strlen(const char *s);
-
 
 /* Allocates and returns an array of strings obtained by splitting ’s’ using
 the character ’c’ as a delimiter. The array must end with a NULL pointer */
@@ -63,8 +59,8 @@ static void	free_array(size_t i, char **array)
 char	**ft_split(const char *s, char c)
 {
 	char	**array;
-	size_t		i;
-	size_t		j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
