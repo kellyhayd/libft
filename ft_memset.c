@@ -6,7 +6,7 @@
 /*   By: krocha-h <krocha-h@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 09:15:41 by krocha-h          #+#    #+#             */
-/*   Updated: 2023/10/13 12:38:28 by krocha-h         ###   ########.fr       */
+/*   Updated: 2023/11/09 14:38:02 by krocha-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-// int main(void)
-// {
-// 	char *s = "aaaaa";
-// 	s = malloc (sizeof(char) * 5);
-// 	teste(s, '0', 5);
-// 	printf("%s\n", s);
-// }

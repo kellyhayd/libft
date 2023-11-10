@@ -1,3 +1,0 @@
-// Functions' global definition
-
-
