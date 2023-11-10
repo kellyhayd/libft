@@ -1,58 +1,36 @@
 # Libft
 
-This project is about understanding the way these functions work,
-implementing and learning to use them. Your will create your own library.
+This project is about understanding the way these functions work, implementing and learning to use them.
+> Your will create your own library.
 
-Mandatory part
+## Mandatory part
 
-  --> Part 1 - Libc functions
+### Part 1 - Libc functions
 
-* isalpha
-* isdigit
-* isalnum
-* isascii
-* isprint
-* strlen
-* memset
-* bzero
-* memcpy
-* memmove
-* strlcpy
-* strlcat
-* toupper
-* tolower
-* strchr
-* strrchr
-* strncmp
-* memchr
-* memcmp
-* strnstr
-* atoi
-* calloc
-* strdup
+|           |           |           |           |
+|:---------:|:---------:|:---------:|:---------:|
+|  isalpha  |  memset   | tolower   |  strlen   |
+|  isalnum  |  bzero    | strchr    |  toupper  |
+|  isdigit  |  memcpy   | strrchr   |  strnstr  |
+|  isalnum  |  memmove  |  strncmp  |  atoi     |
+|  isascii  |  strlcpy  |  memchr   |  calloc   |
+|  isprint  |  strlcat  |  memcmp   |  strdup   |
 
-  --> Part 2 - Additional functions
+### Part 2 - Additional functions
 
-* ft_substr
-* ft_strjoin
-* ft_strtrim
-* ft_split
-* ft_itoa
-* ft_strmapi
-* ft_striteri
-* ft_putchar_fd
-* ft_putstr_fd
-* ft_putendl_fd
-* ft_putnbr_fd
+|            |            |               |               |
+|:----------:|:----------:|:-------------:|:-------------:|
+| ft_substr  |  ft_split  | ft_striteri   | ft_putendl_fd |
+| ft_strjoin |  ft_itoa   | ft_putchar_fd | ft_putnbr_fd  |
+| ft_strtrim | ft_strmapi | ft_putstr_fd  |               |
 
-  --> Bonus part
+### Bonus part
 
-* ft_lstnew
-* ft_lstadd_front
-* ft_lstsize
-* ft_lstlast
-* ft_lstadd_back
-* ft_lstdelone
-* ft_lstclear
-* ft_lstiter
-* ft_lstmap
+|                 |                |              |               |
+|:---------------:|:--------------:|:------------:|:-------------:|
+| ft_lstnew       |  ft_lstmap     | ft_lstdelone | ft_putendl_fd |
+| ft_lstadd_front |  ft_lstlast    | ft_lstclear  | ft_putnbr_fd  |
+| ft_lstsize      | ft_lstadd_back | ft_lstiter   |               |
+
+
+![Resultado_libft](https://github.com/kellyhayd/libft/assets/69431689/fd39ecbe-5a05-4873-8558-dbd8e9e4df08)
