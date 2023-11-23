@@ -1,11 +1,11 @@
-# Libft
+<h1 align="center"> 📚 Libft </h1>
 
-This project is about understanding the way these functions work, implementing and learning to use them.
-> Your will create your own library.
+>This project is about understanding the way these functions work, implementing and learning to use them.
+>>Your will create your own library.
 
-## Mandatory part
+<h2> ⭕ Mandatory Part </h2>
 
-### Part 1 - Libc functions
+<h3> 🔺 Part 1: Libc functions </h3>
 
 |           |           |           |           |
 |:---------:|:---------:|:---------:|:---------:|
@@ -16,7 +16,7 @@ This project is about understanding the way these functions work, implementing a
 |  isascii  |  strlcpy  |  memchr   |  calloc   |
 |  isprint  |  strlcat  |  memcmp   |  strdup   |
 
-### Part 2 - Additional functions
+<h3> 🔺 Part 2: Additional functions </h3>
 
 |            |            |               |               |
 |:----------:|:----------:|:-------------:|:-------------:|
@@ -24,7 +24,7 @@ This project is about understanding the way these functions work, implementing a
 | ft_strjoin |  ft_itoa   | ft_putchar_fd | ft_putnbr_fd  |
 | ft_strtrim | ft_strmapi | ft_putstr_fd  |               |
 
-### Bonus part
+<h2> 🌟 Bonus Part </h2>
 
 |                 |                |              |               |
 |:---------------:|:--------------:|:------------:|:-------------:|
